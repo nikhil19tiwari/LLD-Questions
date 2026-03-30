@@ -2,35 +2,33 @@ package com.nikhil.lld.parkinglot;
 
 public class ParkingSpot {
 
-	private int id;
+	private Integer id;
 	private boolean isAvaliable;
-	private VehicleType vehicleType;
+	private VehcileType vehcileType;
 	
-	public ParkingSpot(int id,VehicleType vehicleType) {
-		this.vehicleType = vehicleType;
+	public ParkingSpot(Integer id, boolean isAvaliable, VehcileType vehcileType) {
+		super();
 		this.id = id;
-		isAvaliable = true;
+		this.isAvaliable = isAvaliable;
+		this.vehcileType = vehcileType;
 	}
-
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
-
+	public boolean isAvaliable() {
+		return isAvaliable;
+	}
 	public void setAvaliable(boolean isAvaliable) {
 		this.isAvaliable = isAvaliable;
 	}
-
-	public void setVehicleType(VehicleType vehicleType) {
-		this.vehicleType = vehicleType;
+	public VehcileType getVehcileType() {
+		return vehcileType;
 	}
-
-	public boolean getIsAvaliable() {
-		return isAvaliable;
+	public void setVehcileType(VehcileType vehcileType) {
+		this.vehcileType = vehcileType;
 	}
-	public VehicleType getVehicleType() {
-		return vehicleType;
-	}
+	
 }
