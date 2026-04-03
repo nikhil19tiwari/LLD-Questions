@@ -20,7 +20,6 @@ public class ParkingSpotManager {
 		for(ParkingSpot spot : parkingSpot) {
 			availableSpots.get(spot.getVehcileType()).offer(spot);
 		}
-		
 	}
 	
 	public void parkVehicle(Vehcile vehicle) {
@@ -47,9 +46,7 @@ public class ParkingSpotManager {
 	        occupiedSpace.remove(spotId);
 
 	        System.out.println("Unparked from spot: " + spotId);
-	    }
-	
-	
+	    }	
 }
 //this approach take O(n) complexity to allot parking spot or unpark
 //List<ParkingSpot> parkingSpot;
