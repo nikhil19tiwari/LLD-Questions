@@ -2,7 +2,7 @@ package in.nikhil.project.cache;
 
 import java.util.HashMap;
 
-class Node {
+ class Node {
 
     int data;
     int count;
